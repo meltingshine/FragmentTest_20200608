@@ -35,6 +35,7 @@ class StudentListFragment : BaseFragment() {
     override fun setValues() {
     addStudents()
         userAdpater = UserAdapter(mContext, R.layout.user_list_item,studentList)
+        studentList.adapter =
     }
 
     fun addStudents() {
