@@ -7,17 +7,28 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.fragmenttest_20200608.R
 
-class StudentListFragment : Fragment() {
+class StudentListFragment : BaseFragment() {
 
     override fun onCreateView(
-        inflater: LayoutInflater?,
+        inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        inflater.inflate(R.layout.fragment_student_list,container,false)
+        return inflater.inflate(R.layout.fragment_student_list,container,false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+        setupEvents()
+        setValues()
+
+    }
+
+    override fun setupEvents() {
+
+    }
+
+    override fun setValues() {
+
     }
 }

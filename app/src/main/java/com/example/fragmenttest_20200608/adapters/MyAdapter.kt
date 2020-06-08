@@ -7,9 +7,9 @@ import com.example.fragmenttest_20200608.fragments.MyProfileFragment
 import com.example.fragmenttest_20200608.fragments.StudentListFragment
 
 class MyAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
-    override fun getItem(position: Int): Fragment {
 
-        return when (position) {
+    override fun getItem(position: Int): Fragment {
+        return when(position) {
             0 -> MyProfileFragment()
             else -> StudentListFragment()
         }
